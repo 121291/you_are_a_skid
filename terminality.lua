@@ -1,3 +1,6 @@
+local _game = nil
+local VER = " v1.2"
+
 rconsoleprint("@@LIGHT_BLUE@@")
 rconsoleprint[[ 
  $$$$$$$$                                /$$                     /$$    /$$   /$$              
@@ -84,7 +87,7 @@ mouse.KeyDown:connect(
             end
         end
     end)
-    rconsoleinfo("You're saitama now, lol")
+    rconsolewarn("Super punch enabled")
 elseif Input == "cmds" then
     rconsoleinfo[[
 
