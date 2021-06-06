@@ -1,6 +1,14 @@
 local _game = nil
 local VER = " v1.2"
 
+function Arrest(player)
+ 
+local bruh = game:GetService("Workspace")[player].HumanoidRootPart
+local lol = game:GetService("Workspace").Remote.arrest
+lol:InvokeServer(bruh)
+
+end
+
 
 rconsoleprint("@@LIGHT_BLUE@@")
 rconsoleprint[[ 
@@ -179,6 +187,13 @@ elseif Input == "ak47" then
  local s = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
 local rem = game:GetService("Workspace").Remote.ItemHandler
 rem:InvokeServer(s)
+  elseif Input == "arrest" then
+  rconsoleinfo("Type the player you'd like to arrest.")
+  for i,v in pairs(game.Players:GetPlayers()) do
+   if Input == v.Name then
+        arrest(v.Name)
+     end
+  end
 elseif Input == "cmds" then
     rconsoleinfo[[
 
