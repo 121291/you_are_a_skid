@@ -181,6 +181,7 @@ elseif Input == "cmds" then
 
         arrest all - Arrests all players.
         superpunch - Become saitama. (Your punches instantly kill anyone)
+        removewalls - Remove the prison walls.
 
 
     ]]
