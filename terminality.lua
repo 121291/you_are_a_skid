@@ -1,14 +1,7 @@
 local _game = nil
 local VER = " v1.2"
-local IsWhitelisted = false
 
-local plr = game:GetService("Players").LocalPlayer
 
-if plr.Name == "TheTajDev" or plr.Name == "Kazuin_S" or plr.Name == "thantom698" or plr.Name == "273JX" or plr.Name == "Frostyb1t" then
- IsWhitelisted = true
- end
-
-while IsWhitelisted == true do
 rconsoleprint("@@LIGHT_BLUE@@")
 rconsoleprint[[ 
  $$$$$$$$                                /$$                     /$$    /$$   /$$              
@@ -196,4 +189,3 @@ elseif Input == "cmds" then
                 rconsoleerr("Invalid command!")
       end
    end
-end
