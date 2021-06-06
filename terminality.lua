@@ -171,6 +171,14 @@ game.Workspace.Prison_OuterWall:Remove()
 wait(0.1)
 game.Workspace.Prison_Fences:Remove()
   rconsoleinfo("Walls removed")
+  elseif Input == "m9" then
+local s = game:GetService("Workspace")["Prison_ITEMS"].giver.M9.ITEMPICKUP
+local rem = game:GetService("Workspace").Remote.ItemHandler
+rem:InvokeServer(s)
+elseif Input == "ak47" then
+ local s = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
+local rem = game:GetService("Workspace").Remote.ItemHandler
+rem:InvokeServer(s)
 elseif Input == "cmds" then
     rconsoleinfo[[
 
@@ -179,9 +187,11 @@ elseif Input == "cmds" then
 
         Commands
 
-        arrest all - Arrests all players.
-        superpunch - Become saitama. (Your punches instantly kill anyone)
-        removewalls - Remove the prison walls.
+  [1]      arrest all - Arrests all players.
+  [2]     superpunch - Become saitama. (Your punches instantly kill anyone)
+  [3]      removewalls - Remove the prison walls.
+  [4]      m9 - Gives you an M9.
+  [5]      ak47 - Gives you an AK-47.
 
 
     ]]
