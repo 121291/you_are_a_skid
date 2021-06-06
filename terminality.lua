@@ -1,6 +1,3 @@
-local _game = nil
-local VER = " v1.2"
-
 rconsoleprint("@@LIGHT_BLUE@@")
 rconsoleprint[[ 
  $$$$$$$$                                /$$                     /$$    /$$   /$$              
