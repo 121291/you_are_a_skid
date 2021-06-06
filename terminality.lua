@@ -187,13 +187,6 @@ elseif Input == "ak47" then
  local s = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
 local rem = game:GetService("Workspace").Remote.ItemHandler
 rem:InvokeServer(s)
-  elseif Input == "arrest" then
-  rconsoleinfo("Type the player you'd like to arrest.")
-  for i,v in pairs(game.Players:GetPlayers()) do
-   if Input == v.Name then
-        arrest(v.Name)
-     end
-  end
 elseif Input == "cmds" then
     rconsoleinfo[[
 
