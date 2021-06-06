@@ -1,6 +1,6 @@
 local _game = nil
 local VER = " v1.2"
-_G.IsWhitelisted = false
+local IsWhitelisted = false
 
 local plr = game:GetService("Players").LocalPlayer
 
@@ -10,13 +10,13 @@ for i,v in pairs(Whitelist) do
  local plrs = game:GetService("Players"):GetPlayers()
  for x,y in pairs(plrs) do
   if y.Name == v.Name then
-   _G.IsWhitelisted = true
+   IsWhitelisted = true
    else
-   _G.IsWhitelisted = false
+   IsWhitelisted = false
     end
  end
 
-while _G.IsWhitelisted == true do
+while IsWhitelisted == true do
 rconsoleprint("@@LIGHT_BLUE@@")
 rconsoleprint[[ 
  $$$$$$$$                                /$$                     /$$    /$$   /$$              
