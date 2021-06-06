@@ -4,16 +4,8 @@ local IsWhitelisted = false
 
 local plr = game:GetService("Players").LocalPlayer
 
-local Whitelist = {"TheTajDev", "273JX", "thantom698"}
-
-for i,v in pairs(Whitelist) do
- local plrs = game:GetService("Players"):GetPlayers()
- for x,y in pairs(plrs) do
-  if y.Name == v.Name then
-   IsWhitelisted = true
-   else
-   IsWhitelisted = false
-    end
+if plr.Name == "TheTajDev" or plr.Name == "Kazuin_S" or plr.Name == "thantom698" or plr.Name == "273JX" or plr.Name == "Frostyb1t" then
+ IsWhitelisted = true
  end
 
 while IsWhitelisted == true do
