@@ -31,6 +31,7 @@ _game = "prison_life"
 else
 rconsoleprint("\nGame is unsupported!")
 rconsoleprint("\n")
+ _game = "universal"
 rconsolename("Terminality"..VER)
 end
 
@@ -307,4 +308,8 @@ elseif Input == "cmds" then
                 else
                 rconsoleerr("Invalid command!")
       end
+ 
+ while _game == "universal" do
+  game.Players.LocalPlayer:Kick("\nUniversal is being worked on!\nWe currently only support Prison Life.")
+  end
    end
