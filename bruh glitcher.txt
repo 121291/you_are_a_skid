@@ -1,0 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SampleSacred/projectxnew/main/ProjectXV1_3.lua",true))()
+local A_1 = ".glitcher"
+local A_2 = "System"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)

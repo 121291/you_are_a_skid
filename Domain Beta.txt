@@ -1,0 +1,2 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Input50/hub/main/BetaHub?token=ATXE5YEW76RPSTCBPBTNB3DARPXWC'),true))()
+-- Key: QATwhUga2hN4Pv8K

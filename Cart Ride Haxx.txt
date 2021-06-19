@@ -1,0 +1,114 @@
+--Into Rdite
+if game.PlaceId == 4913581664 then
+loadstring(game:HttpGet("https://pastebin.com/raw/j4iCzg40"))()
+end
+
+--Into guywithapoo
+
+if game.PlaceId == 5499911356 then
+loadstring(game:HttpGet("https://pastebin.com/raw/nf9Qe814"))()
+end
+
+--Cart ride into Albert
+
+if game.PlaceId == 5475935012 then
+loadstring(game:HttpGet("https://pastebin.com/raw/pa5VxTiw"))()
+end
+
+--Into Nicki Minaj
+if game.PlaceId == 5299786474 then
+loadstring(game:HttpGet("https://pastebin.com/raw/tzvL4K1Q"))()
+end
+
+--Into Noob
+if game.PlaceId == 5072930687 then
+loadstring(game:HttpGet("https://pastebin.com/raw/t3qadvju"))()
+end
+
+--Into Zombie
+if game.PlaceId == 4973296096 then
+loadstring(game:HttpGet("https://pastebin.com/raw/QzzcV7c6"))()
+end
+
+--Into James
+if game.PlaceId == 5008344562 then
+loadstring(game:HttpGet("https://pastebin.com/raw/8PzDANSx"))()
+end
+
+--Cart ride into Among us 
+
+if game.PlaceId == 474648978 then
+loadstring(game:HttpGet("https://pastebin.com/raw/r6C2sHCw"))()
+end
+
+--Cart ride into DanTDM
+
+if game.PlaceId == 439116338 then
+ 
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "Cart Ride Into DanTDM",
+     Style = 1,
+     SizeX = 300,
+     SizeY = 300,
+     Theme = "Dark",
+      ColorOverrides = {
+        MainFrame = Color3.fromRGB(2, 2, 2)
+      }
+
+    })
+local Page = UI.New({
+    Title = "Into DanTDM"
+})
+
+Page.Button({
+        Text = "Spasm",
+        Callback = function()
+    _G.Loopname = true
+    while _G.Loopname do
+    wait(0.1)
+    for i,v in pairs(workspace:GetDescendants()) do
+			if v:IsA("ClickDetector") then
+				fireclickdetector(v)
+		end 
+     end
+   end
+end
+})
+
+Page.Button({
+        Text = "Stop Spasm",
+        Callback = function()
+    _G.Loopname = true
+    while _G.Loopname do
+    wait(0.1)
+    for i,v in pairs(workspace:GetDescendants()) do
+			if v:IsA("ClickDetector") then
+				fireclickdetector(v)
+      end
+     end
+    end
+   end
+  })
+end
+
+--Cart ride into minions for admin
+
+if game.PlaceId == 70934006 then
+    loadstring(game:HttpGet("https://pastebin.com/raw/SgG3ViUC"))()
+
+
+ 
+ 
+
+
+
+
+--loadstring(game:HttpGet("https://pastebin.com/raw/DtepAWxp"))()
+
+
+
+
+
+end
