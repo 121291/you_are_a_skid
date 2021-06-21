@@ -6,7 +6,7 @@
 -- skid list: 3xtraMilk
 
 local player = game.Players.LocalPlayer.Character
-local maybe = player.MeshPartAccessory
+local maybe = player["Ethereal Scythe (Red)"]
 local clone = maybe:Clone()
 clone.Parent = player
 maybe.Parent = workspace
