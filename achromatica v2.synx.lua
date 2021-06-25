@@ -1,28 +1,10 @@
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Achromatica V2 is loading..  ", "All")
-
 wait(2.10)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Achromatica V2 LOADED!.  ", "All")
-
-
-
-   
-
-
 getgenv().ReanimateVersion = "v5"
-
-
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/stangithuboffical/selexity/main/Reanimate", true))()
-
-
 wait (2.10)
-
-
-
-
-
-
-game.Players.LocalPlayer.Character.Humanoid:WaitForChild("Animate"):Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("Animate"):Destroy()
 
 
 
