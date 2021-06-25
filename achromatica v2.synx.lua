@@ -44,7 +44,7 @@ end
 
 
 game:FindFirstChildOfClass("Players").LocalPlayer["Character"].Archivable = true
-local hatnameclone = {}
+local hatnameclone = {}--[[
 for _,v in next, game:FindFirstChildOfClass("Players").LocalPlayer["Character"]:GetChildren() do
 	if v:IsA("Accessory") then
 		if hatnameclone[v.Name] then
@@ -57,6 +57,196 @@ for _,v in next, game:FindFirstChildOfClass("Players").LocalPlayer["Character"]:
 		end
 	end
 end
+]]
+LWP1.Parent = leftWing
+local LWP2 = WingPiece:Clone();
+if MPASword[1] then
+	for _,v in pairs(LWP2:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",LWP2.PrimaryPart)
+	local atho = Instance.new("Attachment",LWP2.PrimaryPart)
+
+	local HatChoice = MPASword[1]
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+end
+LWP2.Parent = leftWing
+local LWP3 = WingPiece:Clone();
+if game.Players.LocalPlayer.Character:FindFirstChild("White Demon Trident") then --White Demon Trident
+	for _,v in pairs(LWP3:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",LWP3.PrimaryPart)
+	local atho = Instance.new("Attachment",LWP3.PrimaryPart)
+
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("White Demon Trident") --White Demon Trident
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-1.75,0)
+	atho.Rotation = Vector3.new(0,0,-26)
+end
+LWP3.Parent = leftWing
+local RWP1 = WingPiece:Clone();
+if MPASword[1] then
+	for _,v in pairs(RWP1:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP1.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP1.PrimaryPart)
+
+	local HatChoice = MPASword[1]
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+end
+RWP1.Parent = rightWing
+local RWP2 = WingPiece:Clone();
+if MPASword[1] then
+	for _,v in pairs(RWP2:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP2.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP2.PrimaryPart)
+
+	local HatChoice = MPASword[1]
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+end
+
+RWP2.Parent = rightWing
+local RWP3 = WingPiece:Clone();
+if game.Players.LocalPlayer.Character:FindFirstChild("Black Demon Trident") then --Black Demon Trident
+	for _,v in pairs(RWP3:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP3.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP3.PrimaryPart)
+
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("Black Demon Trident") --Black Demon Trident
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-1.75,0)
+	atho.Rotation = Vector3.new(0,0,-26) -- 48
+end
+
+RWP3.Parent = rightWing
+local RWP4 = WingPiece:Clone();
+if game.Players.LocalPlayer.Character:FindFirstChild("Meshes/Crystal MoonAccessory") then --Meshes/Crystal MoonAccessory
+	for _,v in pairs(RWP4:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP4.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP4.PrimaryPart)
+
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("Meshes/Crystal MoonAccessory") --Meshes/Crystal MoonAccessory
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-1.75,0)
+	atho.Rotation = Vector3.new(0,0,48)
+end
+
+
+RWP4.Parent = rightWing
+
+local RWP5 = WingPiece:Clone();
+if game.Players.LocalPlayer.Character:FindFirstChild("swordhalo") then -- Sword Halo
+	for _,v in pairs(RWP5:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP5.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP5.PrimaryPart)
+
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("swordhalo") -- Sword Halo
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("ShadowBladeMasterAccessory") -- Sword Halo
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-1.75,0)
+	atho.Rotation = Vector3.new(0,0,48)
+end
+
+RWP5.Parent = rightWing
+
+local RWP6 = WingPiece:Clone();
+if game.Players.LocalPlayer.Character:FindFirstChild("BladeMasterAccessory") then --Northern Star
+	for _,v in pairs(RWP6:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP6.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP6.PrimaryPart)
+
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("BladeMasterAccessory") --Northern Star
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-1.75,0)
+	atho.Rotation = Vector3.new(0,0,48)
+end
+
+RWP6.Parent = rightWing
+
+local RWP7 = WingPiece:Clone();
+if game.Players.LocalPlayer.Character:FindFirstChild("Divine Aura") then --Divine Aura
+	for _,v in pairs(RWP7:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP7.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP7.PrimaryPart)
+
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("Divine Aura") --Divine Aura
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-1.75,0)
+	atho.Rotation = Vector3.new(0,0,48)
+end
+RWP7.Parent = rightWing
+local LWP1W=Weld(LWP1.PrimaryPart,Torso,CF.N(2,-2,-1)*CF.A(0,0,0))
+local LWP2W=Weld(LWP2.PrimaryPart,Torso,CF.N(4.25,-1,-1)*CF.A(0,0,M.R(15)))
+local LWP3W=Weld(LWP3.PrimaryPart,Torso,CF.N(6.5,.5,-1)*CF.A(0,0,M.R(30)))
+local RWP1W=Weld(RWP1.PrimaryPart,Torso,CF.N(-2,-2,-1)*CF.A(0,0,0))
+local RWP2W=Weld(RWP2.PrimaryPart,Torso,CF.N(-4.25,-1,-1)*CF.A(0,0,M.R(-15)))
+local RWP3W=Weld(RWP3.PrimaryPart,Torso,CF.N(-6.5,.5,-1)*CF.A(0,0,M.R(-30)))
+local RWP4W=Weld(RWP4.PrimaryPart,Torso,CF.N(-6.5,.5,-1)*CF.A(0,0,M.R(-30)))
+local RWP5W=Weld(RWP5.PrimaryPart,Torso,CF.N(-6.5,.5,-1)*CF.A(0,0,M.R(-30)))
+local RWP6W=Weld(RWP6.PrimaryPart,Torso,CF.N(-6.5,.5,-1)*CF.A(0,0,M.R(-30)))
+local RWP7W=Weld(RWP7.PrimaryPart,Torso,CF.N(-6.5,.5,-1)*CF.A(0,0,M.R(-30)))
 for _,v in pairs(hatnameclone) do
 	if type(v) == "table" then
 		local num = 1
