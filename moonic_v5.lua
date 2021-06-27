@@ -1,12 +1,22 @@
--- Extraordinary Glitcher
--- v1.0.9
+plr = game.Players.LocalPlayer
 
-local VERSION = "v1.0.9"
+plr.Chatted:Connect(function(chat)
+if chat == "/e taj" then
+        -- Extraordinary Glitcher
+-- v1.1 (you dont need the 0, but for you dumb 10 year olds its v1.10)
+
+local VERSION = "v1.1"
+
+local function chat(message)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+end
 
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
 Text = "{System}: Extraordinary Glitcher "..VERSION.." was loaded.";
 Color = BrickColor.new("Gold").Color
 })
+
+chat("[Extraordinary Glitcher] Loaded!")
 
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
 Text = "Close the Achromoonic GUI to start the script.";
@@ -1236,7 +1246,7 @@ end
 RWP4.Parent = rightWing
 
 local RWP5 = WingPiece:Clone();
-if game.Players.LocalPlayer.Character:FindFirstChild("swordhalo") then -- Sword Halo
+if game.Players.LocalPlayer.Character:FindFirstChild("Evil Aura") then -- Sword Halo
 	for _,v in pairs(RWP5:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -1245,7 +1255,7 @@ if game.Players.LocalPlayer.Character:FindFirstChild("swordhalo") then -- Sword 
 	local athp = Instance.new("Attachment",RWP5.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP5.PrimaryPart)
 
-	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("swordhalo") -- Sword Halo
+	local HatChoice = game.Players.LocalPlayer.Character:FindFirstChild("Evil Aura") -- Sword Halo
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -1737,32 +1747,44 @@ UIS.InputBegan:connect(function(io,gpe)
 	--MODES
 	if(io.KeyCode == Enum.KeyCode.One and Mode~='EXTRAORDINARY')then 
 		changeMode'EXTRAORDINARY'
+        chat("[EXTRAORDINARY] You're extraordinary!")
 	elseif(io.KeyCode == Enum.KeyCode.H and Mode=='EXTRAORDINARY')then 
 		changeMode'+MONSTRONIX+'
+        chat("[MONSTRONIX] mY mOnStEr pOwEr!")
 	elseif(io.KeyCode == Enum.KeyCode.H and Mode=='+MONSTRONIX+')then 
 		changeMode'VORTEX'
+        chat("[VORTEX] I'm stuck in the vortex!")
 	elseif(io.KeyCode == Enum.KeyCode.Two and Mode~='=_-CalmNess-_=')then 
 		changeMode'=_-CalmNess-_='
+        chat("[CALMNESS] Let's just chill out.")
 	elseif(io.KeyCode == Enum.KeyCode.Three and Mode~='DESTINY')then
 		changeMode'DESTINY'
+        chat("[DESTINY] All of your destiny will be mine.")
 	elseif(io.KeyCode ==Enum.KeyCode.N and Mode~='SANS')then 
 		changeMode'SANS'
+        chat("[SANS] *how ya doin, kid?")
 	elseif(io.KeyCode == Enum.KeyCode.X and Mode~=(NameTextBox.Text))then 
 		changeMode(NameTextBox.Text)
 	elseif(io.KeyCode == Enum.KeyCode.P and Mode~='ENERGY')then 
 		changeMode'ENERGY'
+        chat("[ENERGY] Full of energy!!")
 	elseif(io.KeyCode == Enum.KeyCode.G and Mode~='GL^%£ITCH')then
 		changeMode'GL^%£ITCH'
+        chat("[GL1TCH] err0r in y0ur c0de")
 	elseif(io.KeyCode == Enum.KeyCode.Four and Mode~='BEYOND')then
 		changeMode'BEYOND'
+        chat("[BEYOND] I'm already beyond that!")
 	elseif(io.KeyCode == Enum.KeyCode.Five and Mode~='TROLLGE')then
 		changeMode'TROLLGE'
+        chat("[TROLLGE] :troll:")
 	elseif(io.KeyCode == Enum.KeyCode.Six and Mode~='+DANGEROUS+')then
 		changeMode'+DANGEROUS+'
+        chat("[DANGEROUS] We're in danger!")
 	elseif(io.KeyCode == Enum.KeyCode.Seven and Mode~='THE ESCHATON')then
 		changeMode'THE ESCHATON'
 	elseif(io.KeyCode == Enum.KeyCode.Eight and Mode~='BROKEN MACHINERY')then 
 		changeMode'BROKEN MACHINERY'
+        chat("[BROKEN MACHINERY] it appears my AI isnt working...")
 	elseif(io.KeyCode == Enum.KeyCode.Q and Mode~='Mayhem')then
 		changeMode'Mayhem'
 	elseif(io.KeyCode == Enum.KeyCode.K and Mode~='INTERSTELLAR')then
@@ -1771,22 +1793,30 @@ UIS.InputBegan:connect(function(io,gpe)
 		changeMode'GOD'
 	elseif(io.KeyCode == Enum.KeyCode.Y and Mode~='+OVERPOWERED+')then 
 		changeMode'+OVERPOWERED+'
+        chat("[OVERPOWERED] I'm too powerful!!")
 	elseif(io.KeyCode == Enum.KeyCode.Z and Mode~='=-XESTER-=')then 
 		changeMode'=-XESTER-='
+        chat("[XESTER] hehehehehe.")
 	elseif(io.KeyCode == Enum.KeyCode.L and Mode~='LEGMAN')then
 		changeMode'LEGMAN'
+        chat("[LEG MAN] leg man :troll:")
 	elseif(io.KeyCode == Enum.KeyCode.B and Mode~='INSANITY')then 
 		changeMode'INSANITY'
+        chat("[INSANITY] hElP mE")
 	elseif(io.KeyCode == Enum.KeyCode.Nine and Mode~='HORROR')then
 		changeMode'HORROR'
+        chat("[HORROR] idk what to put here. - taj")
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='RIDDLER')then 
 		changeMode'HYPNOSIS'
+        chat("[HYPNOSIS] look into my eyes..")
 	elseif(io.KeyCode == Enum.KeyCode.R and Mode=='EUCLIDEAN')then 
 		changeMode'S P A C E T I M E'
+        chat("[SPACETIME] Close to me!")
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='N U C L E A R - WASTE')then 
 		changeMode'THE PLAGUEBRINGER'
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='Mayhem')then 
 		changeMode'EUCLIDEAN'
+        chat("[EUCLIDEAN] that scp is euclid.")
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='DESTINY')then 
 		changeMode'ATLANTIS'
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='GL^%£ITCH')then 
@@ -1797,6 +1827,7 @@ UIS.InputBegan:connect(function(io,gpe)
 		changeMode'=-RED XESTER-='
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='=_-CalmNess-_=')then 
 		changeMode'=_-ANGRYNESS-_='
+        chat("[ANGRYNESS] My rage burns on!")
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='+OVERPOWERED+')then 
 		changeMode'UNDEAD'
 	elseif(io.KeyCode == Enum.KeyCode.U and Mode=='BROKEN MACHINERY')then
@@ -3120,24 +3151,20 @@ while true do
 	if(State == 'Idle')then
 		if(Mode=='THE ESCHATON' and NeutralAnims and not vaporwaveMode)then Change = 0.1+music.PlaybackLoudness/200 else Change = 1 end
 		if(Mode=='EXTRAORDINARY')then
-			local Alpha = .1
+local Alpha = .1
 			if(NeutralAnims)then	
-				RJ.C0 = RJ.C0:lerp(RJC0*CF.N(0,0+.05*M.C(Sine/32),0)*CF.A(M.R(0+3*M.S(Sine/64)),0,0),Alpha)
-				if(M.RNG(1,45)==1)then
-					NK.C0 = NK.C0:lerp(NKC0*CF.A(M.RRNG(-25,25),M.RRNG(-25,25),M.RRNG(-25,25)),.8)
-				else
-					NK.C0 = NK.C0:lerp(NKC0*CF.A(M.R(-10-2.5*M.S(Sine/32)),0,0),Alpha)
-				end
-				LS.C0 = LS.C0:lerp(LSC0*CF.N(.3,0+.05*M.S(Sine/32),.1)*CF.A(M.R(-35),M.R(5+2.5*M.C(Sine/32)),M.R(35-1.5*M.C(Sine/32))),Alpha)
-				RS.C0 = RS.C0:lerp(RSC0*CF.N(-.3,0+.05*M.S(Sine/32),.1)*CF.A(M.R(-25),M.R(5-2.5*M.C(Sine/32)),M.R(-35+1.5*M.C(Sine/32))),Alpha)
+				RJ.C0 = RJ.C0:lerp(RJC0*CF.N(0,0+0.4*M.C(Sine/32),0)*CF.A(M.R(0+3*M.S(Sine/64)),0,0),Alpha)
+				NK.C0 = NK.C0:lerp(NKC0*CF.A(M.R(-10-2.5*M.S(Sine/32)),0,0),Alpha)
+				LS.C0 = LS.C0:lerp(LSC0*CF.N(0,0.2+.2*M.S(Sine/32),0)*CF.A(0,M.R(5+5*M.C(Sine/32)),M.R(-10-5*M.C(Sine/32))),Alpha)
+				RS.C0 = RS.C0:lerp(RSC0*CF.N(0,0.2+.2*M.S(Sine/32),0)*CF.A(0,M.R(5-5*M.C(Sine/32)),M.R(10+5*M.C(Sine/32))),Alpha)
 			end
 			if(legAnims)then 
 				if(NeutralAnims)then
-					LH.C0 = LH.C0:lerp(LHC0*CF.N(0,0-.05*M.C(Sine/32),0)*CF.A(0,0,M.R(-2.5)),Alpha)
-					RH.C0 = RH.C0:lerp(RHC0*CF.N(0,0-.05*M.C(Sine/32),0)*CF.A(0,0,M.R(2.5)),Alpha)
+					LH.C0 = LH.C0:lerp(LHC0*CF.N(0,0-.2*M.C(Sine/32),0)*CF.A(0,0,M.R(-2.5)),Alpha)
+					RH.C0 = RH.C0:lerp(RHC0*CF.N(0,0-.2*M.C(Sine/32),0)*CF.A(0,0,M.R(2.5)),Alpha)
 				else
-					LH.C0 = LH.C0:lerp(LHC0*CF.A(0,0,M.R(-2.5)),Alpha)
-					RH.C0 = RH.C0:lerp(RHC0*CF.A(0,0,M.R(2.5)),Alpha)
+					LH.C0 = LH.C0:lerp(LHC0,Alpha)
+					RH.C0 = RH.C0:lerp(RHC0,Alpha)
 				end
 			end
 
@@ -3697,17 +3724,21 @@ if(legAnims)then
 				end
 			end
 		elseif(Mode=='BEYOND')then
-			local Alpha = .1
+					local Alpha = .1
 			if(NeutralAnims)then	
-				RJ.C0 = RJ.C0:lerp(RJC0*CF.N(-.3+6*M.C(Sine/39),12+6*M.C(Sine/32),0)*CF.A(M.R(0+1*M.S(Sine/64)),M.R(5),0),Alpha)
-				NK.C0 = NK.C0:lerp(NKC0*CF.A(M.R(-10-2.5*M.S(Sine/32)),M.R(-5),0),Alpha)
+				RJ.C0 = RJ.C0:lerp(RJC0*CF.N(0,0+.05*M.C(Sine/32),0)*CF.A(M.R(-5+1*M.S(Sine/64)),M.R(-25),0),Alpha)
+				if(M.RNG(1,25)==1)then
+					NK.C0 = NK.C0:lerp(NKC0*CF.A(M.RRNG(-25,25),M.RRNG(-25,25),M.RRNG(-25,25)),.8)
+				else
+					NK.C0 = NK.C0:lerp(NKC0*CF.A(M.R(-10-2.5*M.S(Sine/32)),M.R(35),M.R(-10))*CF.A(M.RRNG(-5,5),M.RRNG(-5,5),M.RRNG(-5,5)),Alpha)
+				end
 				LS.C0 = LS.C0:lerp(LSC0*CF.N(0,0+.05*M.S(Sine/32),0)*CF.A(0,M.R(5+5*M.C(Sine/32)),M.R(-10-5*M.C(Sine/32))),Alpha)
-				RS.C0 = RS.C0:lerp(RSC0*CF.N(0,0+.05*M.S(Sine/32),0)*CF.A(0,M.R(5-5*M.C(Sine/32)),M.R(10+5*M.C(Sine/32))),Alpha)
+				RS.C0 = RS.C0:lerp(RSC0*CF.N(-.1,0+.05*M.S(Sine/32),0)*CF.A(M.R(175),M.R(5-2.5*M.C(Sine/32)),M.R(-25-1.5*M.C(Sine/32))),Alpha)
 			end
 			if(legAnims)then 
 				if(NeutralAnims)then
-					LH.C0 = LH.C0:lerp(LHC0*CF.N(0,0-.05*M.C(Sine/32),0),Alpha)
-					RH.C0 = RH.C0:lerp(RHC0*CF.N(0,0-.05*M.C(Sine/32),0)*CF.A(0,M.R(-5),0),Alpha)
+					LH.C0 = LH.C0:lerp(LHC0*CF.N(0,0-.05*M.C(Sine/32),0)*CF.A(M.R(-10),M.R(25),0),Alpha)
+					RH.C0 = RH.C0:lerp(RHC0*CF.N(0,0-.05*M.C(Sine/32),0)*CF.A(M.R(5),0,0),Alpha)
 				else
 					LH.C0 = LH.C0:lerp(LHC0,Alpha)
 					RH.C0 = RH.C0:lerp(RHC0,Alpha)
@@ -5420,4 +5451,6 @@ end
 end
 end
 
+    end)
+    end
 end)
