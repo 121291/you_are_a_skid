@@ -1,8 +1,4 @@
-plr = game.Players.LocalPlayer
-
-plr.Chatted:Connect(function(chat)
-if chat == "/e taj" then
-        -- Extraordinary Glitcher
+-- Extraordinary Glitcher
 -- v1.1 (you dont need the 0, but for you dumb 10 year olds its v1.10)
 
 local VERSION = "v1.1"
@@ -5450,7 +5446,5 @@ end
 end
 end
 end
-
-    end)
-    end
+end)
 end)
